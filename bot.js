@@ -119,8 +119,8 @@ if(config.mongodbURL || process.env.MONGO){
   } else {
   console.log('\x1b[32m%s\x1b[0m', `|    🍔 Error Katzen Dj!`)
   }
-
-
+`mongoose.set('strictQuery', false);`
+`mongoose.set('strictQuery', true);`
 const express = require("express");
 const app = express();
 const port = 3000;
